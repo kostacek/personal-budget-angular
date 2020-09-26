@@ -1,25 +1,31 @@
 * {
     box-sizing: border-box;
 }
-
+/* a11y changed here to font size*/
 body {
-    font-size: 10px;
+    font-size: 17px;
     font-family: Tahoma, Arial;
 }
 
 div.menu {
     width: 100%;
-    background-color: #4d5791;
     height: 44px;
     padding: 0 40px;
-}
-
+}/* Video borders */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 div.menu ul,
 div.menu ul li {
     margin: 0;
     padding: 0 ;
     list-style: none;
     display: inline-block;
+    background-color: green;
 }
 
 div.menu ul li a {
