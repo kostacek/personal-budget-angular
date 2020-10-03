@@ -1,0 +1,94 @@
+About<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>My Budget</title>
+</head>
+<body>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+  <header>
+      <h1>My Budget</h1>
+      <h2>About</h2>
+  </header>
+  <main class="center">
+
+   <div class="_inline-block">
+
+    <article>
+        <h1>About</h1>
+        <p>
+            Do you know where you str spending your money?  
+            If you recall you will get surprised!  Proper budget management depends on app 
+            will help you with that!
+        </p>
+    </article>
+    <article>
+        <h1>Alert</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Iste sapiente, magni omnis mollitia aut totam praesentium ducimus blanditiis minus numquam magnam ipsam dolorum reiciendis ut voluptatibus atque quo placeat debitis.
+        </p>
+    </article>
+    <article>
+        <h1>Results</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Iste sapiente, magni omnis mollitia aut totam praesentium ducimus blanditiis minus numquam magnam ipsam dolorum reiciendis ut voluptatibus atque quo placeat debitis.
+        </p>
+    </article>
+    <article>
+        <h1>Free</h1>
+        <p>
+<canvas id="myChart" width="400" height="400"></canvas>        
+        </p>
+    </article>
+   </div>
+    
+  </main>
+  <footer>
+      <div class="center">
+          All rights reserved &copy; Kostace Kyser
+      </div>
+      
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+  <script>
+      var data = {
+          datasets: [
+{
+    data: [30, 350, 90],
+    backgroundColor: [
+        '#ffcd56',
+        '#ff6384',
+        '#36a2eb',
+        '#fd6b19',
+    ],
+}
+],
+labels: [
+    'Eat out',
+    'Rent',
+    'Groceries'
+]  
+      };
+      function createChart(){
+          var ctx = document.egtElementById("myChart").getContext('2d');
+          var myPieChart = new Chart(ctx, {
+              type: 'pie',
+              data: data
+          });
+      }
+      createChart();
+  </script>
+</body>
+</html>
