@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/kostacek/personal-budget#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fetch-json": "^2.2.7",
+    "node-fetch": "^2.6.1"
   }
 }
